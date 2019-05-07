@@ -1,6 +1,8 @@
 html {
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  position: absolute;
+}
 
 body {
   margin: 0;
@@ -8,210 +10,269 @@ body {
   width: 100%;
   min-height: 100%;
   background-color: #FFF3E0;
-  overflow-x: hidden; }
-  body nav {
-    top: 0;
-    background-color: #FFFFFF;
-    width: 100%;
-    border-bottom: 3px solid #F5F0E8;
-    z-index: 100; }
-    body nav .navbar-toggler:focus {
-      outline: none; }
-    body nav #nav-icon3 {
-      width: 40px;
-      height: 20px;
-      position: relative;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .5s ease-in-out;
-      -moz-transition: .5s ease-in-out;
-      -o-transition: .5s ease-in-out;
-      transition: .5s ease-in-out;
-      cursor: pointer; }
-    body nav #nav-icon3 span {
-      display: block;
-      position: absolute;
-      height: 6px;
-      width: 100%;
-      background: #FFC126;
-      border-radius: 6px;
-      opacity: 1;
-      left: 0;
-      -webkit-transform: rotate(0deg);
-      -moz-transform: rotate(0deg);
-      -o-transform: rotate(0deg);
-      transform: rotate(0deg);
-      -webkit-transition: .25s ease-in-out;
-      -moz-transition: .25s ease-in-out;
-      -o-transition: .25s ease-in-out;
-      transition: .25s ease-in-out; }
-    body nav #nav-icon3 span:nth-child(1) {
-      top: 0px; }
-    body nav #nav-icon3 span:nth-child(2), body nav #nav-icon3 span:nth-child(3) {
-      top: 12px; }
-    body nav #nav-icon3 span:nth-child(4) {
-      top: 24px; }
-    body nav #nav-icon3.open span:nth-child(1) {
-      top: 18px;
-      width: 0%;
-      left: 50%; }
-    body nav #nav-icon3.open span:nth-child(2) {
-      -webkit-transform: rotate(45deg);
-      -moz-transform: rotate(45deg);
-      -o-transform: rotate(45deg);
-      transform: rotate(45deg); }
-    body nav #nav-icon3.open span:nth-child(3) {
-      -webkit-transform: rotate(-45deg);
-      -moz-transform: rotate(-45deg);
-      -o-transform: rotate(-45deg);
-      transform: rotate(-45deg); }
-    body nav #nav-icon3.open span:nth-child(4) {
-      top: 18px;
-      width: 0%;
-      left: 50%; }
-  body .navbar {
-    position: fixed; }
-  body .logo {
-    width: 100px;
-    height: auto;
-    margin-left: 10px; }
-  body .navbar-light .navbar-toggler {
-    border: none; }
-  body .navbar-nav {
-    width: 100%;
-    display: flex;
-    justify-content: flex-end; }
-    body .navbar-nav .nav-item {
-      margin: auto 20px; }
-      body .navbar-nav .nav-item .nav-link {
-        color: #949494;
-        font-family: "Open Sans"; }
-  body header {
-    top: 0;
-    width: 100%;
-    height: 700px;
-    background-color: #ffffff; }
-    body header h1 {
-      padding-top: 300px;
-      margin-left: 100px;
-      font-family: Bree Serif;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 60px;
-      color: #171717; }
-    body header h3 {
-      margin-top: 20px;
-      width: 40vw;
-      margin-left: 100px;
-      font-family: Open Sans;
-      font-style: normal;
-      font-weight: 300;
-      font-size: 20px;
-      color: #999999; }
-    body header .container {
-      z-index: 0;
-      position: absolute;
-      width: auto;
-      height: auto;
-      top: 150px;
-      right: 100px; }
-      body header .container img {
-        width: 35vw;
-        height: auto; }
-  body section {
-    background-color: #FFF3E0; }
-    body section .container {
-      margin: 0;
-      padding: 0;
-      max-width: 100vw; }
-      body section .container h2 {
-        margin-top: 150px;
-        font-family: Bree Serif;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 50px;
-        color: #171717;
-        margin-left: 100px; }
-      body section .container h4 {
-        width: 40vw;
-        font-family: Open Sans;
-        font-style: normal;
-        font-weight: 300;
-        font-size: 20px;
-        color: #999999;
-        margin: 20px 100px; }
-      body section .container .reverseH {
-        text-align: right;
-        margin-right: 100px;
-        float: right; }
-      body section .container .reverse {
-        text-align: right;
-        right: 0;
-        margin-right: 100px; }
-      body section .container img {
-        width: 30vw;
-        height: auto;
-        position: absolute;
-        right: 100px;
-        margin-top: -250px; }
-      body section .container .reverseImg {
-        position: relative;
-        margin-left: 200px; }
-    body section svg {
-      margin: 200px auto; }
-    body section svg:nth-child(2) {
-      transform: scaleX(-1); }
+  overflow-x: hidden;
+}
+body nav {
+  top: 0;
+  background-color: #FFFFFF;
+  width: 100%;
+  border-bottom: 3px solid #d6c9b6;
+  z-index: 100;
+}
+body nav .navbar-toggler:focus {
+  outline: none;
+}
+body nav #nav-icon3 {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+}
+body nav #nav-icon3 span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #FFC126;
+  border-radius: 6px;
+  opacity: 1;
+  left: 0;
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
+}
+body nav #nav-icon3 span:nth-child(1) {
+  top: 0px;
+}
+body nav #nav-icon3 span:nth-child(2), body nav #nav-icon3 span:nth-child(3) {
+  top: 8px;
+}
+body nav #nav-icon3 span:nth-child(4) {
+  top: 16px;
+}
+body nav #nav-icon3.open span:nth-child(1) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+body nav #nav-icon3.open span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+body nav #nav-icon3.open span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+body nav #nav-icon3.open span:nth-child(4) {
+  top: 18px;
+  width: 0%;
+  left: 50%;
+}
+body .navbar {
+  position: fixed;
+}
+body .logo {
+  width: 100px;
+  height: auto;
+  margin-left: 10px;
+}
+body .navbar-light .navbar-toggler {
+  border: none;
+}
+body .navbar-nav {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+body .navbar-nav .nav-item {
+  margin: auto 20px;
+}
+body .navbar-nav .nav-item .nav-link {
+  color: #949494;
+  font-family: "Open Sans";
+}
+body header {
+  top: 0;
+  width: 100%;
+  height: 700px;
+  background-color: #ffffff;
+}
+body header h1 {
+  padding-top: 300px;
+  margin-left: 100px;
+  font-family: Bree Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 60px;
+  color: #171717;
+}
+body header h3 {
+  margin-top: 20px;
+  width: 40vw;
+  margin-left: 100px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #999999;
+}
+body header .container {
+  z-index: 0;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 150px;
+  right: 100px;
+}
+body header .container img {
+  width: 35vw;
+  height: auto;
+}
+body .section1 {
+  background-color: #FFF3E0;
+}
+body .section1 .container {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
+}
+body .section1 .container h2 {
+  margin-top: 150px;
+  font-family: Bree Serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  color: #171717;
+  margin-left: 100px;
+}
+body .section1 .container h4 {
+  width: 40vw;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #999999;
+  margin: 20px 100px;
+}
+body .section1 .container .reverseH {
+  text-align: right;
+  margin-right: 100px;
+  float: right;
+}
+body .section1 .container .reverse {
+  text-align: right;
+  right: 0;
+  margin-right: 100px;
+}
+body .section1 .container img {
+  width: 30vw;
+  height: auto;
+  position: absolute;
+  right: 100px;
+  margin-top: -250px;
+}
+body .section1 .container .reverseImg {
+  position: relative;
+  margin-left: 200px;
+}
+body .section1 .container .margin {
+  padding-bottom: 50px;
+}
+body .section1 svg {
+  margin: 200px auto;
+}
+body .section1 svg:nth-child(2) {
+  transform: scaleX(-1);
+}
+body .section2 {
+  background-color: #FFC126;
+  min-height: 200px;
+}
 
 @media only screen and (max-width: 1555px) {
   body header h1 {
     font-size: 40px;
-    padding-top: 300px; }
+    padding-top: 300px;
+  }
   body header h3 {
-    font-size: 20px; }
+    font-size: 20px;
+  }
   body header .container {
     top: 250px;
-    right: 8vw; }
-    body header .container img {
-      width: 25vw;
-      height: auto; }
+    right: 8vw;
+  }
+  body header .container img {
+    width: 25vw;
+    height: auto;
+  }
   body section h2 {
-    font-size: 35px !important; }
+    font-size: 35px !important;
+  }
   body section h4 {
-    font-size: 15px !important; }
+    font-size: 15px !important;
+  }
   body section svg {
-    margin: 100px auto; } }
+    margin: 100px auto;
+  }
+}
 @media only screen and (max-width: 850px) {
   body header h1 {
     font-size: 30px;
-    padding-top: 300px; }
+    padding-top: 300px;
+  }
   body header h3 {
-    font-size: 15px; }
+    font-size: 15px;
+    width: 60vw;
+  }
   body header .container {
     top: 100px;
-    left: 100px; }
-    body header .container img {
-      width: 200px;
-      height: auto; }
-  body section .container h2 {
-    margin-top: 50px; }
-  body section .container .reverseH {
-    margin-bottom: 300px; }
-  body section .container img {
+    left: 100px;
+  }
+  body header .container img {
+    width: 200px;
+    height: auto;
+  }
+  body .section1 {
+    padding-bottom: 50px;
+  }
+  body .section1 .container h2 {
+    margin-top: 50px;
+  }
+  body .section1 .container .reverseH {
+    margin-bottom: 300px;
+  }
+  body .section1 .container img {
     position: relative;
     left: 100px;
     margin-top: 50px;
-    width: 300px; }
-  body section .container .reverseImg {
+    width: 300px;
+  }
+  body .section1 .container .reverseImg {
     position: absolute;
     right: 100px;
     margin-top: 250px;
-    left: auto; }
-  body section svg {
-    margin: 50px auto; } }
-@media only screen and (max-width: 400px) {
-  body {
-    min-width: 100vw !important; } }
+    left: auto;
+  }
+  body .section1 svg {
+    margin: 50px auto;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
