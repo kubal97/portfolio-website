@@ -160,7 +160,7 @@ body .section1 .container h2 {
   font-weight: normal;
   font-size: 50px;
   color: #171717;
-  margin-left: 100px;
+  margin-left: 50px;
 }
 body .section1 .container h4 {
   width: 40vw;
@@ -179,7 +179,7 @@ body .section1 .container .reverseH {
 body .section1 .container .reverse {
   text-align: right;
   right: 0;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 body .section1 .container img {
   width: 30vw;
@@ -222,13 +222,13 @@ body .section2 {
     width: 25vw;
     height: auto;
   }
-  body section h2 {
+  body .section1 h2 {
     font-size: 35px !important;
   }
-  body section h4 {
+  body .section1 h4 {
     font-size: 15px !important;
   }
-  body section svg {
+  body .section1 svg {
     margin: 100px auto;
   }
 }
@@ -241,12 +241,15 @@ body .section2 {
     font-size: 15px;
     width: 60vw;
   }
+  body header h4 {
+    width: 40vw;
+  }
   body header .container {
     top: 100px;
     left: 100px;
   }
   body header .container img {
-    width: 200px;
+    width: 170px;
     height: auto;
   }
   body .section1 {
@@ -255,6 +258,9 @@ body .section2 {
   body .section1 .container h2 {
     margin-top: 50px;
   }
+  body .section1 .container h4 {
+    width: 60vw;
+  }
   body .section1 .container .reverseH {
     margin-bottom: 300px;
   }
@@ -262,12 +268,12 @@ body .section2 {
     position: relative;
     left: 100px;
     margin-top: 50px;
-    width: 300px;
+    width: 60vw;
   }
   body .section1 .container .reverseImg {
     position: absolute;
     right: 100px;
-    margin-top: 250px;
+    margin-top: 200px;
     left: auto;
   }
   body .section1 svg {

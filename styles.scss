@@ -191,7 +191,7 @@ body{
           size: 50px;
         }
         color: #171717;
-        margin-left: 100px;
+        margin-left: 50px;
       }
 
 
@@ -217,7 +217,7 @@ body{
       .reverse{
         text-align: right;
         right: 0;
-        margin-right: 100px;
+        margin-right: 50px;
       }
 
       img{
@@ -279,7 +279,7 @@ body{
 
     }
 
-    section{
+    .section1{
       h2{
         font-size: 35px !important;
       }
@@ -310,12 +310,16 @@ body{
         width: 60vw;
       }
 
+      h4{
+        width: 40vw;
+      }
+
       .container{
         top: 100px;
         left: 100px;
 
         img{
-          width: 200px;
+          width: 170px;
           height: auto;
         }
       }
@@ -328,6 +332,10 @@ body{
           margin-top: 50px;
         }
 
+        h4{
+          width: 60vw;
+        }
+
         .reverseH{
           margin-bottom: 300px;
         }
@@ -336,13 +344,13 @@ body{
           position: relative;
           left: 100px;
           margin-top: 50px;
-          width: 300px;
+          width: 60vw;
         }
 
         .reverseImg{
           position: absolute;
           right: 100px;
-          margin-top: 250px;
+          margin-top: 200px;
           left: auto;
         }
       }
