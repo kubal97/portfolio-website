@@ -223,8 +223,8 @@ body{
       }
 
       .buttons{
-        display: flex;
-        flex-direction: column;
+        display: inline-block;
+        /*flex-direction: column;*/
         text-align: center;
         margin: auto;
         margin-top: 30px;
@@ -452,7 +452,7 @@ body{
     .section2{
       .container{
         .buttons{
-          flex-direction: row;
+          /*flex-direction: row;*/
         }
 
         .row{

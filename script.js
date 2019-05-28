@@ -8,12 +8,24 @@ hamburger.addEventListener('click', function () {
 
 /*-------Gallery-------*/
 let img = document.querySelectorAll('.item');
-for (let i = 8; i < img.length; i++) {
-    img[i].style.display = "none";
+let width = screen.width;
+if(width < 768){
+    for (let i = 3; i < img.length; i++) {
+        img[i].style.display = "none";
+    }
+    for (let i = 0; i < 3; i++) {
+        img[i].style.display = "flex";
+    }
 }
-for (let i = 0; i < 8; i++) {
-    img[i].style.display = "flex";
+else {
+    for (let i = 8; i < img.length; i++) {
+        img[i].style.display = "none";
+    }
+    for (let i = 0; i < 8; i++) {
+        img[i].style.display = "flex";
+    }
 }
+
 
 function filter(category) {
     let images = document.querySelectorAll('.item');
@@ -21,7 +33,7 @@ function filter(category) {
     more.style.display = "inline-block";
 
     if(category === 'all'){
-        for (let i = 10; i < images.length; i++) {
+        for (let i = 8; i < images.length; i++) {
             images[i].style.display = "none";
         }
         for (let i = 0; i < 8; i++) {
