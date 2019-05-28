@@ -7,43 +7,53 @@ hamburger.addEventListener('click', function () {
 /*---------------------*/
 
 /*-------Gallery-------*/
-let images = document.querySelectorAll('.item');
-document.getElementById('all').addEventListener("click", function () {
-    for(let i=0; i<images.length; i++) {
-        images[i].style.display = 'flex';
-    }
-})
-
-document.getElementById('2d').addEventListener("click", function () {
-for(let i=0; i<images.length; i++){
-    if(images[i].classList.contains('2d')){
-        images[i].style.display = 'flex';
-    }
-    else{
-        images[i].style.display = 'none';
-    }
+let img = document.querySelectorAll('.item');
+for (let i = 8; i < img.length; i++) {
+    img[i].style.display = "none";
 }
-})
+for (let i = 0; i < 8; i++) {
+    img[i].style.display = "flex";
+}
 
-document.getElementById('3d').addEventListener("click", function () {
-    for(let i=0; i<images.length; i++){
-        if(images[i].classList.contains('3d')){
-            images[i].style.display = 'flex';
+function filter(category) {
+    let images = document.querySelectorAll('.item');
+    let more = document.querySelector('.more');
+    more.style.display = "inline-block";
+
+    if(category === 'all'){
+        for (let i = 10; i < images.length; i++) {
+            images[i].style.display = "none";
         }
-        else{
-            images[i].style.display = 'none';
+        for (let i = 0; i < 8; i++) {
+            images[i].style.display = "flex";
         }
     }
-})
-
-document.getElementById('Frontend').addEventListener("click", function () {
-    for(let i=0; i<images.length; i++){
-        if(images[i].classList.contains('frontend')){
-            images[i].style.display = 'flex';
-        }
-        else{
-            images[i].style.display = 'none';
+    else {
+        more.style.display = 'none';
+        for(let j = 0; j < images.length; j++){
+            if(images[j].classList.contains(category)){
+                images[j].style.display = 'flex';
+            }
+            else images[j].style.display = 'none';
         }
     }
-})
+
+    let buttons = document.getElementsByClassName("click");
+    let active = document.getElementsByClassName("active");
+    active[0].classList.remove('active')
+    buttons[category].classList.add("active");
+}
 /*---------------------*/
+
+/*---Show more button---*/
+function showMore() {
+    let images = document.getElementsByClassName("item");
+    for(let i = 0; i < images.length; i++){
+        images[i].style.display = "flex";
+    }
+
+    let more = document.querySelector('.more');
+    more.style.display = "none";
+}
+
+/*----------------------*/
