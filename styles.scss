@@ -118,6 +118,12 @@ body{
     .nav-item{
       margin: auto 20px;
 
+      .flag{
+        width: 20px;
+        height: auto;
+        margin-top: 10px;
+      }
+
       .nav-link{
         color: #949494;
         font-family: "Open Sans";
@@ -205,8 +211,9 @@ body{
   }
 
   .section2{
-    background-color: #c59830;
+    background-color: #ECAD2E;
     min-height: 200px;
+    padding-bottom: 100px;
 
     .container{
       display: flex;
@@ -307,6 +314,74 @@ body{
       }
     }
   }
+
+  .section3{
+    background-color: #171717;
+    min-height: 200px;
+
+    .container{
+      display: flex;
+      margin: auto;
+      text-align: center;
+      flex-direction: column;
+
+      .send{
+        margin: auto;
+        padding: 10px;
+        width: 400px;
+        background-color: #171717;
+        border: 10px solid #ECAD2E;
+        border-radius: 10px;
+        color: #FFFFFF;
+        font-family: Bree Serif;
+        font-size: 30px;
+        margin-top: -40px;
+      }
+
+      .contact{
+        margin: auto;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+
+        .mail{
+          font-family: Open Sans;
+          font-weight: 300;
+          font-size: 25px;
+          color: #FEFBF6;
+          margin-top: 10px;
+          margin-right: 20px;
+        }
+
+        .social{
+          margin: auto;
+          flex-direction: row;
+          margin-left: 20px;
+          margin-top: 15px;
+          margin-bottom: 30px;
+
+          .fab{
+            font-size: 30px;
+            color: #BBBBBB;
+            margin: auto 10px;
+          }
+
+          .fab:hover{
+            color: #FFFFFF;
+            cursor: pointer;
+          }
+        }
+      }
+
+      .copywright{
+        font-family: "Open Sans";
+        font-weight: 500;
+        font-size: 10px;
+        line-height: 21px;
+        color: #585858;
+      }
+    }
+  }
 }
 
 @keyframes text-shadow-drop-center {
@@ -322,6 +397,19 @@ body{
 
 @media only screen and (min-width: 768px) {
   body{
+    nav{
+      .collapse{
+        .navbar-nav{
+          .nav-item{
+            .flag{
+              width: 30px;
+              height: auto;
+            }
+          }
+        }
+      }
+    }
+
     header {
       .row {
         text-align: left;
@@ -404,6 +492,15 @@ body{
             display: grid;
             grid-template-columns: 30vw 30vw 30vw;
           }
+        }
+      }
+    }
+
+    .section3{
+      .container{
+        .contact{
+          flex-direction: row;
+
         }
       }
     }

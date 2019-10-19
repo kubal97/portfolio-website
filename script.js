@@ -1,5 +1,5 @@
 /*------Hamburger------*/
-let hamburger = document.getElementById('nav-icon3');
+const hamburger = document.getElementById('nav-icon3');
 hamburger.addEventListener('click', function () {
     console.log("Test");
     this.classList.toggle('open');
@@ -7,8 +7,8 @@ hamburger.addEventListener('click', function () {
 /*---------------------*/
 
 /*-------Gallery-------*/
-let img = document.querySelectorAll('.item');
-let width = screen.width;
+const img = document.querySelectorAll('.item');
+const width = screen.width;
 if(width < 768){
     for (let i = 3; i < img.length; i++) {
         img[i].style.display = "none";
@@ -28,8 +28,8 @@ else {
 
 
 function filter(category) {
-    let images = document.querySelectorAll('.item');
-    let more = document.querySelector('.more');
+    const images = document.querySelectorAll('.item');
+    const more = document.querySelector('.more');
     more.style.display = "inline-block";
 
     if(category === 'all'){
@@ -50,8 +50,8 @@ function filter(category) {
         }
     }
 
-    let buttons = document.getElementsByClassName("click");
-    let active = document.getElementsByClassName("active");
+    const buttons = document.getElementsByClassName("click");
+    const active = document.getElementsByClassName("active");
     active[0].classList.remove('active')
     buttons[category].classList.add("active");
 }
@@ -59,12 +59,12 @@ function filter(category) {
 
 /*---Show more button---*/
 function showMore() {
-    let images = document.getElementsByClassName("item");
+    const images = document.getElementsByClassName("item");
     for(let i = 0; i < images.length; i++){
         images[i].style.display = "flex";
     }
 
-    let more = document.querySelector('.more');
+    const more = document.querySelector('.more');
     more.style.display = "none";
 }
 
