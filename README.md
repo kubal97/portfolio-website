@@ -19,7 +19,7 @@ This is my personal portfolio website made by myself.
 
 ## Launch
 
-_Soon_
+_In progress_ https://kubal97.github.io/portfolio-website/
 
 ## Status
 Project status: _In progress_
